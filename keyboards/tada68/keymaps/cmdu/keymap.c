@@ -18,6 +18,8 @@
 #define M_BSPDD             M(MACRO_BREATH_SPEED_DEC)
 #define M_BDFLT             M(MACRO_BREATH_DEFAULT)
 
+
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Keymap _BL: (Base Layer) Default Layer
@@ -30,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |----------------------------------------------------------------|
    * |LS-PO   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|RS-PC  |BUp| V+|
    * |----------------------------------------------------------------|
-   * |Hyper|Alt|Cmd|           Space           |Alt|FN|RWD|FFW|BDn| V-|
+   * |Hyper|Alt|Cmd|           Space           |FN|FN|RWD|FFW|BDn| V-|
    * `----------------------------------------------------------------'
    */
 
@@ -39,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_LBRC, KC_RBRC, KC_BSLS, KC_SLEP, \
   MT(KC_LCTRL, KC_ESC), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, KC_ENT, KC__MUTE, \
   KC_LSPO, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSPC, _______, KC__VOLUP, \
-  MOD_HYPR, KC_LALT, KC_LGUI, KC_SPC, KC_RALT, MO(_FL), KC_MRWD, KC_MFFD, _______, KC__VOLDOWN),
+  MOD_HYPR, KC_LALT, KC_LGUI, KC_SPC, MO(_FL), MO(_FL), KC_MRWD, KC_MFFD, _______, KC__VOLDOWN),
 
   /* Keymap _FL: Function Layer
    * ,----------------------------------------------------------------.
